@@ -1,4 +1,3 @@
-
 <template>
-  <h1 class="text-xl">Test</h1>
+  <router-view></router-view>
 </template>

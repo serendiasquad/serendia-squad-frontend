@@ -10,10 +10,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "typeRoots": ["node_modules/@types", "modules/@types"],
+    "baseUrl": "./",
+    "types": ["@types/node"],
+    "typeRoots": ["node_modules/@types", "@types"],
+    "paths": {
+      "@/*": ["./modules/*"],
+    }
   },
-  "include": ["modules/**/*.ts", "modules/**/*.d.ts", "modules/**/*.tsx", "modules/**/*.vue"],
+  "include": ["./modules/**/*.ts", "@types/**/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

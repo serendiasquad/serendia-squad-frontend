@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+        @apply text-white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        @apply bg-neutral-900;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply h-12 px-5 hover:bg-primary transition flex items-center justify-center;
+    }
+
+    .btn-primary.active {
+        @apply bg-primary;
+    }
+}
