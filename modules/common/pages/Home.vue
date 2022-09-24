@@ -17,13 +17,13 @@ import InformationCard from '@/common/components/home/InformationCard.vue';
         <div class="flex justify-center mt-8 items-center">
             <a href="https://www.github.com/serendiasquad" target="_blank">
                 <button class="py-2 px-4 transition hover:bg-white hover:bg-opacity-10 rounded mr-4">
-                    <i class="fa-brands fa-github mr-1"></i>
+                    <i class="ri-github-fill mr-1"></i>
                     Github
                 </button>
             </a>
             <a href="https://discord.gg/serendia" target="_blank">
                 <button class="py-2 px-4 transition hover:bg-white hover:bg-opacity-10 rounded mr-4">
-                    <i class="fa-brands fa-discord mr-1"></i>
+                    <i class="ri-discord-fill mr-1"></i>
                     Discord
                 </button>
             </a>
@@ -33,6 +33,7 @@ import InformationCard from '@/common/components/home/InformationCard.vue';
         </div>
     </section>
     <FieldWrapper class="text-center">
+        <img src="../../assets/wave.svg" alt="wave" class="w-full" />
         <h3 class="text-xl tracking-wide mb-4 opacity-50">Learn</h3>
         <h1 class="text-4xl font-bold">
             <span class="text-emerald-500">Easy</span> to learn.

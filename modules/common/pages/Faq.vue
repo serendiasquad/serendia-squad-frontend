@@ -9,7 +9,7 @@ import Container from "@/common/components/Container.vue";
     <div class="flex flex-col items-center">
       <div class="flex flex-col items-center">
         <h1 class="text-4xl text-center">Sıkça Sorulan Sorular</h1>
-        <div class="mb-6 h-1 w-1/2 rounded my-2 bg-emerald-500" />
+        <div class="mb-6 h-1 w-full rounded my-2 bg-emerald-500" />
       </div>
       <div>
         <div class="my-8">
