@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { ref } from "vue";
+
 import { tags, categories } from "@/contants";
 
 import Navbar from "@/common/components/Navbar.vue";
-import { computed } from "@vue/reactivity";
 
 const totalCode = ref(0);
 const totalDeveloper = ref(0);
