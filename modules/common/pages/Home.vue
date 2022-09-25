@@ -33,7 +33,7 @@ import InformationCard from '@/common/components/home/InformationCard.vue';
         </div>
     </section>
     <FieldWrapper class="text-center">
-        <img src="../../assets/wave.svg" alt="wave" class="w-full" />
+        <img src="/wave.svg" alt="wave" class="w-full" />
         <h3 class="text-xl tracking-wide mb-4 opacity-50">Learn</h3>
         <h1 class="text-4xl font-bold">
             <span class="text-emerald-500">Easy</span> to learn.
@@ -86,5 +86,4 @@ import InformationCard from '@/common/components/home/InformationCard.vue';
             </InformationCard>
         </ResponsiveFieldWrapper>
     </FieldWrapper>
-
 </template>
