@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-import { tags, categories } from "@/contants";
 
+import { tags, categories } from "@/contants";
+import CodeCard from "@/common/components/explore/CodeCard.vue";
 import Navbar from "@/common/components/Navbar.vue";
-import { computed } from "@vue/reactivity";
-import CodeCard from "../components/explore/CodeCard.vue";
 
 const totalCode = ref(0);
 const totalDeveloper = ref(0);

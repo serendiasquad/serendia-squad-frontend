@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import NavModal from "@/common/components/mobile/NavModal.vue";
 import { ref } from "vue";
+import NavModal from "@/common/components/mobile/NavModal.vue";
 
 const modal = ref(false);
 
