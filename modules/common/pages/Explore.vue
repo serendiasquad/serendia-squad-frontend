@@ -4,6 +4,7 @@ import { tags, categories } from "@/contants";
 
 import Navbar from "@/common/components/Navbar.vue";
 import { computed } from "@vue/reactivity";
+import CodeCard from "../components/explore/CodeCard.vue";
 
 const totalCode = ref(0);
 const totalDeveloper = ref(0);
@@ -69,8 +70,8 @@ function isCategorySelected(category) {
             </div>
         </section>
         <img src="/wave.svg" class="w-full" />
-        <section class="container mx-auto flex flex-row">
-            <div class="w-80 mr-6 h-max">
+        <section class="container mx-auto flex flex-row sm:px-0 px-4">
+            <div class="hidden sm:block w-80 mr-6 h-max">
                 <section>
                     <h2 class="text-2xl font-bold text-emerald-500">Categories</h2>
                     <div class="mt-6 grid gap-y-3">
@@ -115,8 +116,8 @@ function isCategorySelected(category) {
                         </span>
                         codes found
                     </h3>
-                    <div>
-                        <span class="mr-2">Order By</span>
+                    <div class="flex items-center ml-auto">
+                        <span class="mr-2 hidden sm:block">Order By</span>
                         <select class="py-2 px-2 rounded bg-neutral-700 focus:outline-none" name="cars" id="cars">
                             <option value="view">Most Viewed</option>
                             <option selected value="like">Most Liked</option>
@@ -125,8 +126,8 @@ function isCategorySelected(category) {
                         </select>
                     </div>
                 </section>
-                <section class="grid gap-x-6 gap-y-6 grid-rows-3 grid-cols-3 mt-4">
-                    <!-- TODO: Project component not completed yet -->
+                <section class="grid gap-x-6 gap-y-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+                    <CodeCard v-for="i in 50" :key="i"></CodeCard>
                 </section>
             </div>
         </section>
