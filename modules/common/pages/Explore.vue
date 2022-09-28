@@ -69,8 +69,8 @@ function isCategorySelected(category) {
             </div>
         </section>
         <img src="/wave.svg" class="w-full" />
-        <section class="container mx-auto flex flex-row sm:px-0 px-4">
-            <div class="hidden sm:block w-80 mr-6 h-max">
+        <section class="container mx-auto relative flex flex-row sm:px-0 px-4 mb-8">
+            <div class="hidden sm:block w-80 mr-6">
                 <section>
                     <h2 class="text-2xl font-bold text-emerald-500">Categories</h2>
                     <div class="mt-6 grid gap-y-3">
