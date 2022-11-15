@@ -13,6 +13,23 @@
     body {
         @apply bg-neutral-900;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-neutral-900;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-neutral-800;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-neutral-700;
+    }
 }
 
 @layer components {
