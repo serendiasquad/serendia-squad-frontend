@@ -24,6 +24,9 @@ module.exports = {
       colors: {
         ...colors,
         "primary": "#10b981"
+      },
+      gridTemplateColumns: {
+        'fill': 'repeat(auto-fill, minmax(0, 1fr))'
       }
     },
   },

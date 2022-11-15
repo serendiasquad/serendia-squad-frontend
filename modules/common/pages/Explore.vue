@@ -62,18 +62,19 @@ function isCategorySelected(category) {
                 <section class="flex flex-col w-max mx-6">
                     <h3 class="mb-1">Total</h3>
                     <strong class="text-5xl text-emerald-500">
-                        {{ totalDeveloper}}
+                        {{ totalDeveloper }}
                     </strong>
                     <p class="mt-1">Developers</p>
                 </section>
             </div>
         </section>
         <img src="/wave.svg" class="w-full" />
-        <section class="container mx-auto relative flex flex-row sm:px-0 px-4 mb-8">
-            <div class="hidden sm:block w-80 mr-6">
+        <section class="container mx-auto relative flex flex-col sm:flex-row sm:px-0 px-4 mb-8">
+            <div class="w-full sm:w-80 mr-6 sm:mb-0 mb-4">
                 <section>
                     <h2 class="text-2xl font-bold text-emerald-500">Categories</h2>
-                    <div class="mt-6 grid gap-y-3">
+                    <div
+                        class="mt-6 grid gap-x-4 sm:auto-cols-auto sm:grid-flow-row auto-cols-max grid-flow-col gap-y-3 overflow-x-auto pb-4 m:pb-0">
                         <button
                             class="flex items-center px-4 py-3 bg-neutral-800 rounded-lg transition border border-transparent hover:border-violet-500">
                             <div class="flex items-center">
@@ -93,7 +94,8 @@ function isCategorySelected(category) {
                 </section>
                 <section class="mt-6">
                     <h2 class="text-2xl font-bold text-emerald-500">Tags</h2>
-                    <div class="mt-6 grid gap-y-3">
+                    <div
+                        class="mt-6 grid gap-x-4 sm:auto-cols-auto sm:grid-flow-row auto-cols-max grid-flow-col gap-y-3 overflow-x-auto pb-4 sm:pb-0">
                         <button v-for="(tag, i) in tags" :key="i" @click="selectTag(tag.name)"
                             :class="{ 'border-emerald-500': isTagSelected(tag.name) }"
                             class="flex items-center px-4 py-3 bg-neutral-800 rounded-lg transition border border-transparent hover:border-emerald-500">
