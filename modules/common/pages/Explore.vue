@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-import { tags, categories } from "@/contants";
 import CodeCard from "@/common/components/explore/CodeCard.vue";
 import Navbar from "@/common/components/Navbar.vue";
+import { categories, tags } from "@/contants";
 
 const totalCode = ref(0);
 const totalDeveloper = ref(0);
-const selectedTags = ref([]);
-const selectedCategories = ref([]);
+const selectedTags = ref<string[]>([]);
+const selectedCategories = ref<string[]>([]);
 
-function selectTag(tag) {
+function selectTag(tag: string) {
     if (selectedTags.value.includes(tag)) {
         selectedTags.value = selectedTags.value.filter((t) => t !== tag);
     } else {
@@ -18,7 +18,7 @@ function selectTag(tag) {
     }
 }
 
-function selectCategory(category) {
+function selectCategory(category: string) {
     if (selectedCategories.value.includes(category)) {
         selectedCategories.value = selectedCategories.value.filter(
             (c) => c !== category
@@ -28,11 +28,11 @@ function selectCategory(category) {
     }
 }
 
-function isTagSelected(tag) {
+function isTagSelected(tag: string) {
     return selectedTags.value.includes(tag);
 }
 
-function isCategorySelected(category) {
+function isCategorySelected(category: string) {
     return selectedCategories.value.includes(category);
 }
 </script>
