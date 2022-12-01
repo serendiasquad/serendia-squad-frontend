@@ -1,7 +1,7 @@
-/** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: [
     "./modules/**/*.{ts,vue}",
     "./index.html"
@@ -32,3 +32,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+module.exports = config;

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Navbar from '@/common/components/Navbar.vue';
 import FieldWrapper from "@/common/components/home/FieldWrapper.vue";
+import InformationCard from '@/common/components/home/InformationCard.vue';
 import ResponsiveFieldWrapper from '@/common/components/home/ResponsiveFieldWrapper.vue';
 import VectorEditorComponent from '@/common/components/home/VectorEditorComponent.vue';
-import InformationCard from '@/common/components/home/InformationCard.vue';
+import Navbar from '@/common/components/Navbar.vue';
 </script>
 
 <template>
@@ -36,14 +36,12 @@ import InformationCard from '@/common/components/home/InformationCard.vue';
         <img src="/wave.svg" alt="wave" class="w-full" />
         <h3 class="text-xl tracking-wide mb-4 opacity-50">Learn</h3>
         <h1 class="text-4xl font-bold">
-            <span class="text-emerald-500">Easy</span> to learn.
-            <span class="text-emerald-500">Easy</span> to make
+            <span class="text-emerald-500">Easy</span> to learn,
+            <span class="text-emerald-500">Easy</span> to create!
         </h1>
         <p class="mt-2 opacity-80">
-            You have everything to make a Discord Bot. Copy if necessary, learn if you
-            want, or paste what you have copied.
+            You have everything to make a Discord bot. Copy, if necessary, learn if you want or paste what you have copied.
         </p>
-
         <div class="w-full flex flex-col sm:flex-row sm:justify-center mt-12 transition-all">
             <VectorEditorComponent>tutorial.js</VectorEditorComponent>
             <VectorEditorComponent class="sm:ml-6">index.js</VectorEditorComponent>
@@ -52,36 +50,32 @@ import InformationCard from '@/common/components/home/InformationCard.vue';
     <FieldWrapper class="text-center">
         <h3 class="text-xl tracking-wide mb-4 opacity-50">Explore</h3>
         <h1 class="text-4xl font-bold">
-            To develop yourself? So much to
-            <span class="text-emerald-500">Explore</span>
+            Want to improve yourself? So much to
+            <span class="text-emerald-500">Explore!</span>
         </h1>
         <p class="mt-2 opacity-80">
-            Discover powerful modules, integrate with your favorite providers and
-            start quickly with themes.
+            Discover powerful modules, integrate with your favourite providers and start quickly with themes!
         </p>
         <ResponsiveFieldWrapper class="text-emerald-500 mt-12">
             <InformationCard>
                 <i class="text-4xl fa-solid fa-code-branch"></i>
                 <h5 class="mt-6 text-lg font-bold tracking-wide">Modules</h5>
                 <p class="mt-2">
-                    If you needed other extensions, this solved at problem.
+                    If you need some extensions, we solved it with our modules!
                 </p>
             </InformationCard>
             <InformationCard>
                 <i class="text-4xl fa-solid fa-code"></i>
                 <h5 class="mt-6 text-lg font-bold tracking-wide">Codes</h5>
                 <p class="mt-2">
-                    So much difference writed codes by difference developers. Just see at
-                    this codes and copy!
+                    So much different codes written by different developers. Just find what you need and copy!
                 </p>
             </InformationCard>
             <InformationCard>
                 <i class="text-4xl fa-solid fa-users"></i>
                 <h5 class="mt-6 text-lg font-bold tracking-wide">Large Community</h5>
                 <p class="mt-2">
-                    <span class="text-emerald-500">Serendia Squad</span> have a large
-                    community. All kinds of people shape us with different ideas,
-                    different projects and content.
+                    <span class="text-emerald-500">Serendia Squad</span> has a large community. All kind of people shapes us with different ideas, projects and contents.
                 </p>
             </InformationCard>
         </ResponsiveFieldWrapper>
