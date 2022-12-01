@@ -38,7 +38,7 @@ function isCategorySelected(category: string) {
 </script>
 
 <template>
-    <Navbar></Navbar>
+    <Navbar />
     <main class="w-full mt-20">
         <section class="container mx-auto flex flex-col px-4 sm:px-0 transition-all sm:flex-row justify-between">
             <div class="sm:w-3/6">
@@ -47,8 +47,8 @@ function isCategorySelected(category: string) {
                     <span class="text-emerald-500">SQ</span> Codes
                 </h1>
                 <p class="mt-4 text-lg">
-                    Discover our list of codes to supercharge your project. Created by the
-                    Serendia Squad and community.
+                    Discover our list of codes to supercharge your project. Created by
+                    <span class="text-emerald-500">SerendiaSquad</span> and the community.
                 </p>
             </div>
             <div class="mt-8 sm:mt-0 sm:w-3/6 flex justify-end">
@@ -115,7 +115,7 @@ function isCategorySelected(category: string) {
                         <span class="text-xl font-bold text-emerald-500">
                             0
                         </span>
-                        codes found
+                        code(s) found
                     </h3>
                     <div class="flex items-center ml-auto">
                         <span class="mr-2 hidden sm:block">Order By</span>
@@ -128,7 +128,7 @@ function isCategorySelected(category: string) {
                     </div>
                 </section>
                 <section class="grid gap-x-6 gap-y-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
-                    <CodeCard v-for="i in 50" :key="i"></CodeCard>
+                    <CodeCard v-for="i in 50" :key="i" />
                 </section>
             </div>
         </section>
