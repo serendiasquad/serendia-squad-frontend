@@ -8,7 +8,7 @@ import Navbar from "@/common/components/Navbar.vue";
   <Container class="mt-12">
     <div class="flex flex-col items-center">
       <div class="flex flex-col items-center">
-        <h1 class="text-4xl text-center">Frequenly Asked Questions</h1>
+        <h1 class="text-4xl text-center">Frequently Asked Questions</h1>
         <div class="mb-6 h-1 w-full rounded my-2 bg-emerald-500" />
       </div>
       <div>
