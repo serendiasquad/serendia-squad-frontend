@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import App from "@/common/App.vue";
-import router from '@/common/core/router';
+import App from "@/presentation/App.vue";
+import router from './router';
 
 const app = createApp(App);
 app.use(router);

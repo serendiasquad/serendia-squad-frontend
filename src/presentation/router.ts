@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-const Home = () => import("@/common/pages/Home.vue");
-const Explore = () => import("@/common/pages/Explore.vue")
-const Faq = () => import("@/common/pages/Faq.vue");
-const Editor = () => import("@/common/pages/Editor.vue");
+const Home = () => import("@/presentation/pages/Home.vue");
+const Explore = () => import("@/presentation/pages/Explore.vue")
+const Faq = () => import("@/presentation/pages/Faq.vue");
+const Editor = () => import("@/presentation/pages/Editor.vue");
 
 export default createRouter({
     history: createWebHistory(),

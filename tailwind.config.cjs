@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors');
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: [
-    "./modules/**/*.{ts,vue}",
+    "./src/**/*.{ts,vue,css}",
     "./index.html"
   ],
   safelist: [

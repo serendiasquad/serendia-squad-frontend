@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import FieldWrapper from "@/common/components/home/FieldWrapper.vue";
-import InformationCard from '@/common/components/home/InformationCard.vue';
-import ResponsiveFieldWrapper from '@/common/components/home/ResponsiveFieldWrapper.vue';
-import VectorEditorComponent from '@/common/components/home/VectorEditorComponent.vue';
-import Navbar from '@/common/components/Navbar.vue';
+import FieldWrapper from "@/presentation/components/home/FieldWrapper.vue";
+import InformationCard from '@/presentation/components/home/InformationCard.vue';
+import ResponsiveFieldWrapper from '@/presentation/components/home/ResponsiveFieldWrapper.vue';
+import VectorEditorComponent from '@/presentation/components/home/VectorEditorComponent.vue';
+import Navbar from '@/presentation/components/Navbar.vue';
 </script>
 
 <template>

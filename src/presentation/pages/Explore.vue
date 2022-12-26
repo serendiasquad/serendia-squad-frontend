@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-import CodeCard from "@/common/components/explore/CodeCard.vue";
-import Navbar from "@/common/components/Navbar.vue";
-import { categories, tags } from "@/contants";
+import CodeCard from "@/presentation/components/explore/CodeCard.vue";
+import Navbar from "@/presentation/components/Navbar.vue";
+import { categories, tags } from "@/domain/constants";
 
 const totalCode = ref(0);
 const totalDeveloper = ref(0);

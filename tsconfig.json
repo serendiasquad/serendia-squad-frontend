@@ -17,9 +17,9 @@
     "types": ["@types/node"],
     "typeRoots": ["node_modules/@types", "@types"],
     "paths": {
-      "@/*": ["./modules/*"],
+      "@/*": ["./src/*"],
     }
   },
-  "include": ["./modules/**/*.ts", "@types/**/*.d.ts", "./modules/**/*.vue"],
+  "include": ["./src/**/*.ts", "./src/**/*.vue", "@types/**/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
